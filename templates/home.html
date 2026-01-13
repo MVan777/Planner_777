@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<style>
+
+</style>
+<body class="hover">
+    <header>
+        <h1 class="main-title">Главная страница</h1>
+        <nav class="nav-main">
+            <ul>
+                <li><a href="{% url 'planner' %}">Планировщик</a></li>
+                <li><a href="{% url 'login' %}">Вход</a></li>
+                <li><a href="{% url 'register' %}">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>
